@@ -14,13 +14,7 @@
  
 ![linux-system-sinhala-font-changer-main-photo](./res/font-catalogue.jpg)
  
-### භාවිත කලහැකි Linux මෙහෙයුම් පද්ධති:
-
-+ Ubuntu,linux mint,fedora වැනි සෑම linux මෙහෙයුම් පද්ධතියකම මෙම මෘදුකාංගය භාවිත කල හැක.
- 
-# භාවිතය
-
-## Install කරන ආකාරය:
+## Navyබඩී App එක ඔබගේ දුරකතනට Install කරන ආකාරය:
 
 1. පලමුව මෙම link එක මගින් මෙම මෘදුකාංගය download කරගන්න: <br />
 [sinhala-font-changer.zip](https://github.com/hankyoTutorials/linux-system-sinhala-font-changer/releases/download/v2.0/sinhala-font-changer.zip)
