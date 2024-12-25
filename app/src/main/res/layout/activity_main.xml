@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textNoticesSection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:padding="5dp"
+                android:hint="Notices..."
+                android:textSize="17dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/hankyoImage"/>
+
+
+            <ImageView
+                android:id="@+id/hankyoImage"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                app:layout_constraintWidth_percent="0.20"
+                android:scaleType="fitXY"
+                android:src="@drawable/hankyo_profile_with_no_background"
+                app:layout_constraintEnd_toStartOf="@id/centerGuideLine"
+                app:layout_constraintTop_toBottomOf="@id/textNoticesSection"/>
+
+
+            <TextView
+                android:id="@+id/appTitleAndVersionNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Navy බඩී App\nVersion 1.0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginLeft="3dp"
+                app:layout_constraintBottom_toTopOf="@id/shortNoteBookButton"
+                app:layout_constraintStart_toEndOf="@id/centerGuideLine"
+                app:layout_constraintTop_toBottomOf="@id/textNoticesSection" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/centerGuideLine"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.43"/>
+
+
+            <Button
+                android:id="@+id/shortNoteBookButton"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/knowledge_study2"
+                android:text="Short Note පොත"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hankyoImage"
+                app:layout_constraintWidth_percent="0.90" />
+
+
+            <Button
+                android:id="@+id/expensesAndBudgetMonitorButton"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/job_salary_payment_budget"
+                android:text="මාසික විදයම් හා ඉතුරුම් ගණනය කිරීම"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shortNoteBookButton"
+                app:layout_constraintWidth_percent="0.90" />
+
+            <Button
+                android:id="@+id/checkListsUpdate"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/checklist_checkboxes_todo_correct"
+                android:text="CheckLists සලකුණු කිරීම"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/expensesAndBudgetMonitorButton"
+                app:layout_constraintWidth_percent="0.90" />
+
+
+            <Button
+                android:id="@+id/ePayButton"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/payment_image"
+                android:text="Epay මගින් වැටුප බැලීම"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/checkListsUpdate"
+                app:layout_constraintWidth_percent="0.90" />
+
+
+            <Button
+                android:id="@+id/findTheDaysCountInTheCamp"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/calender_dates_count"
+                android:text="නිවාඩුව සදහා රැදීසිටි දින ගණන සෙවීම"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ePayButton"
+                app:layout_constraintWidth_percent="0.90" />
+
+            <Button
+                android:id="@+id/sealinkWebsite"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/navy_anchor_icon"
+                android:text="Sealink Webඅඩවියට පිවිසීම"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/findTheDaysCountInTheCamp"
+                app:layout_constraintWidth_percent="0.90" />
+
+            <Button
+                android:id="@+id/forMentalHealthButton"
+                android:layout_width="0dp"
+                android:layout_height="107dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/mental_stress_meditation"
+                android:text="මානසික සුවයට"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sealinkWebsite"
+                app:layout_constraintWidth_percent="0.90" />
+
+            <Button
+                android:id="@+id/forAboutButton"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/about_information_icon"
+                android:text="About"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forMentalHealthButton"
+                app:layout_constraintWidth_percent="0.90"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

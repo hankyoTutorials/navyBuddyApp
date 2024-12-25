@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ePay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".epay.ePayActivity">
+
+
+    <WebView
+        android:id="@+id/epayWebViewArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </WebView>
+
+    <!-- help window -->
+    <Button
+        android:id="@+id/helpButtonInEpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="උපදෙස්?"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/helpWindowInEpay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.50"
+        android:background="@drawable/black_bg_and_purple_border"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔵epay එකට login වෙන්න නම් mobile data on කරන්න ඕනි\n🔵Network slow නම් load වෙන්න ටික වෙලාවක් යනව\n🔵ඔබ epay එකට register වෙලා නැත්නම් අදාල පුද්ගලයින් හා සම්බන්ධ වී register වන්න\n🔵epay හී login වන password එක අමතක නොවෙන ස්ථානයක සටහන් කරගන්න\n🔵Category, Official Number, Password හරියට දාල \'Captcha\' එකේ තියෙන අකුරු \'Re-Confirm Captcha\' එකේ සිම්පල් කැපිටල් හරියට දාල type කරල Sign In වෙන්න\n🔵පලවෙනි පාර login වෙනකොට විතරයි ඔයාගෙ OfficialNo,Password ඉල්ලන්නෙ, ඊට පස්සෙ ඔයාට නිතර නිතර පහසුවෙන්ම ePay එක බලන්න පුලුවන්"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintStart_toStartOf="@id/helpWindowInEpay"
+            app:layout_constraintTop_toTopOf="@id/helpWindowInEpay"/>
+
+        <Button
+            android:id="@+id/closeHelpWindowButtonInEpay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintWidth_percent="0.60"
+            android:text="Close"
+            app:layout_constraintStart_toStartOf="@id/helpWindowInEpay"
+            app:layout_constraintEnd_toEndOf="@id/helpWindowInEpay"
+            app:layout_constraintBottom_toBottomOf="@id/helpWindowInEpay"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

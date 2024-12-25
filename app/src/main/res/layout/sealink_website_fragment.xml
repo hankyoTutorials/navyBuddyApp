@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sealinkWebsiteFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true"
+    tools:context=".sealinkWebsite.sealinkWebsiteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+            android:id="@+id/descriptionAboutSealink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.95"
+            android:text="✅Sealink වෙබ් අඩවිය මගින් ඔබට,\n    ▶️ Navy General බැලීම \n    ▶️ ඔබගේ pay එක බැලීම\n    ▶️ Welfare Loan හා Savings ප්‍රමාණය බැලීම\n    ▶️ HRIS හී ඔබගේ විස්තර නිවැරදිද/යාවත්කාලීන වී ඇත්දැයි බැලීම\n✅වැනි බොහෝ වැදගත් කාර්යයන් සිදුකල හැක"
+            android:textSize="17sp"
+            android:background="@drawable/black_bg_and_green_border"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginToSealinkSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.95"
+        android:background="@drawable/black_bg_and_green_border"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionAboutSealink">
+
+        <TextView
+            android:id="@+id/loginToSealinkTitle"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="ඔබට Sealink ගිණුමක් තිබේනම්"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="3dp"
+            android:background="@color/purple_500"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="11sp"
+            android:autoSizeStepGranularity="1sp"
+            android:lines="1"
+            app:layout_constraintStart_toStartOf="@id/loginToSealinkSection"
+            app:layout_constraintEnd_toEndOf="@+id/loginToSealinkSection"
+            app:layout_constraintTop_toTopOf="@+id/loginToSealinkSection"/>
+
+            <TextView
+                android:id="@+id/loginToSealinkDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:text="✅ඔබගේ navy email address එක හා password ඇතුලත් කර login වන්න\n✅ඉන්පසු ඔබට පහසුවෙන් sealink වෙත නැවත නැවත යා හැකියි (email හා password යෙදීමට අවශ්‍ය නැත)"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/loginToSealinkTitle"
+                app:layout_constraintStart_toStartOf="@id/loginToSealinkSection"
+                app:layout_constraintEnd_toEndOf="@id/loginToSealinkSection"
+                app:layout_constraintBottom_toTopOf="@id/loginToSealinkButton"/>
+
+            <Button
+                android:id="@+id/loginToSealinkButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.80"
+                android:layout_marginTop="5dp"
+                android:text="Sealink වෙත පිවිසෙන්න"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/sign_in_icon"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="40sp"
+                android:autoSizeMinTextSize="15sp"
+                android:autoSizeStepGranularity="2sp"
+                android:lines="1"
+                app:layout_constraintStart_toStartOf="@id/loginToSealinkSection"
+                app:layout_constraintEnd_toEndOf="@id/loginToSealinkSection"
+                app:layout_constraintTop_toBottomOf="@id/loginToSealinkDescription"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/registerAnSealinkAccountSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.95"
+            android:background="@drawable/black_bg_and_green_border"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginToSealinkSection">
+
+            <TextView
+                android:id="@+id/registerAnSealinkAccountTitle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="ඔබට තවමත් Sealink Account එකක් නැත්නම්"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="3dp"
+                android:background="@color/purple_500"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="40sp"
+                android:autoSizeMinTextSize="11sp"
+                android:autoSizePresetSizes="1sp"
+                android:lines="1"
+                app:layout_constraintTop_toTopOf="@id/registerAnSealinkAccountSection"
+                app:layout_constraintStart_toStartOf="@id/registerAnSealinkAccountSection"
+                app:layout_constraintEnd_toEndOf="@id/registerAnSealinkAccountSection"/>
+
+            <TextView
+                android:id="@+id/registerAnSealinkAccountDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:text="1️⃣පලමුව පහත button එක click කර Sealink වෙබ් අඩවියේ නව ගිණුමක් සාදන තැනට යන්න\n2️⃣ඔබගේ ජාතික හැදුන්ම්පත් අංකය ඇතුලත් කර Search කිරීමෙන් ඔබගේ නම හා ඔබගේ Navy Email එක සටහන් වනු ඇත.\n3️⃣ඉන්පසුව Password එක යෙදීමේදි 'සිම්පල්,කැපිටල්,අංක,සලකුණු' අඩංගු මුරපදයක් යොදා යටින් එම මුරපදය නැවත යොදා Register වන්න\n4️⃣මුරපදය අමතක නොවන ස්ථානයක ලියා තබන්න\n5️⃣ගිණුම සෑදූ පසු ඉහතින් Sealink ගිණුම වෙත පිවිසෙන්න"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/registerAnSealinkAccountTitle"
+                app:layout_constraintStart_toStartOf="@id/registerAnSealinkAccountSection"
+                app:layout_constraintEnd_toEndOf="@id/registerAnSealinkAccountSection"/>
+
+            <Button
+                android:id="@+id/registerAnSealinkAccountButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.80"
+                android:text="නව ගිණුමක් සෑදිම සදහා පිවිසෙන්න"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/new_user_add_person_icon"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="40sp"
+                android:autoSizeMinTextSize="11sp"
+                android:autoSizeStepGranularity="1sp"
+                android:lines="2"
+                app:layout_constraintTop_toBottomOf="@id/registerAnSealinkAccountDescription"
+                app:layout_constraintStart_toStartOf="@id/registerAnSealinkAccountSection"
+                app:layout_constraintEnd_toEndOf="@id/registerAnSealinkAccountSection"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

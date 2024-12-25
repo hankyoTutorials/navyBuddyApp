@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkListsUpdate.checkListEditorActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/checkListEditor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#141218"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contraintLayoutInsideTheEditor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/checkListEditorEditMode"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintWidth_percent="0.98"
+                android:background="@drawable/black_bg_and_purple_border"
+                android:gravity="top"
+                android:hint="@string/checkListEditorItemsHintMessage"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toTopOf="@id/contraintLayoutInsideTheEditor"
+                app:layout_constraintStart_toStartOf="@id/contraintLayoutInsideTheEditor"
+                app:layout_constraintEnd_toEndOf="@id/contraintLayoutInsideTheEditor"
+                app:layout_constraintBottom_toTopOf="@id/checkListNameEdit"/>
+
+            <EditText
+                android:id="@+id/checkListNameEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.80"
+                android:text="sampleName"
+                android:hint="මේ list එකට කැමති නමක් type කරන්න"
+                android:lines="1"
+                android:background="@drawable/black_bg_and_purple_border"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@id/checkListSaveButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <Button
+                android:id="@+id/checkListSaveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintWidth_percent="0.60"
+                android:text="Save List"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="@id/contraintLayoutInsideTheEditor"
+                app:layout_constraintEnd_toEndOf="@id/contraintLayoutInsideTheEditor"
+                app:layout_constraintBottom_toBottomOf="@id/contraintLayoutInsideTheEditor"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

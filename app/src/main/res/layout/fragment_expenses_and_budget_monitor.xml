@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/expensesAndBudgetMonitor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true"
+    tools:context=".expensesAndBudgetMonitor.expensesAndBudgetMonitorFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/eNbMonitorGuidelineHorizontalBottom"
+        app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+        app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight">
+
+        <TextView
+            android:id="@+id/eNbMonitorTitle"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="ඔබගේ මාසික විදයම් හා ඉතුරුම් ගණනය කිරීම"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corners_view"
+            android:textAlignment="center"
+            android:padding="3dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeStepGranularity="2sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/addWaysOfIncomeTitle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="✅මෙම මාසයේ ඔබගේ ආදායම් මාර්ග ඇතුලත් කරන්න: 🔽"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="4sp"
+            android:autoSizeStepGranularity="2sp"
+            android:lines="1"
+            app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/eNbMonitorTitle" />
+
+
+        <EditText
+            android:id="@+id/income1Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="රැකියාවෙන්"
+            android:textStyle="italic"
+            android:hint="ආදායම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/addWaysOfIncomeTitle"/>
+
+
+        <EditText
+            android:id="@+id/income1Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="51000"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/income1Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/addWaysOfIncomeTitle"/>
+
+
+        <EditText
+            android:id="@+id/income2Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="ඉතිරි කිරීමේ හෝ ස්ථාවර ගිණුමෙන්"
+            android:hint="ආදායම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/income1Name"/>
+
+
+        <EditText
+            android:id="@+id/income2Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="3500"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/income2Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/income1Value"/>
+
+
+        <EditText
+            android:id="@+id/income3Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="ආදායම් මාර්ග ඇතුලත් කරන්න"
+            android:text="ගෙවත්තෙන් හෝ වගාවන් වලින්"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/income2Name"/>
+
+
+        <EditText
+            android:id="@+id/income3Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="4100"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/income3Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/income2Value"/>
+
+
+        <EditText
+            android:id="@+id/income4Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:hint="ආදායම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/income3Name"/>
+
+
+        <EditText
+            android:id="@+id/income4Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/income4Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/income3Value"/>
+
+
+        <EditText
+            android:id="@+id/income5Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:hint="ආදායම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/income4Name"/>
+
+
+        <EditText
+            android:id="@+id/income5Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/income5Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/income4Value"/>
+
+
+        <EditText
+            android:id="@+id/income6Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:hint="ආදායම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/income5Name"/>
+
+
+        <EditText
+            android:id="@+id/income6Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/income6Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/income5Value"/>
+
+
+
+        <TextView
+            android:id="@+id/addWaysOfExpensesTitle"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="⛔මෙම මාසයේ ඔබගේ වියදම් මාර්ග ඇතුලත් කරන්න:   🔽"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="4sp"
+            android:autoSizeStepGranularity="2sp"
+            android:lines="1"
+            app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/income6Name" />
+
+        <!--
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/eNbMonitorGuidelineHorizontalTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="5dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/eNbMonitorGuidelineHorizontalBelowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="60dp" />
+-->
+
+
+
+        <EditText
+            android:id="@+id/expense1Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="ගෙදරට වියදමට"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/addWaysOfExpensesTitle"/>
+        
+        <EditText
+            android:id="@+id/expense1Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="19000"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense1Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/addWaysOfExpensesTitle"/>
+
+
+        <EditText
+            android:id="@+id/expense2Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="විදුලි බිල්පත් ගෙවීම"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense1Name"/>
+
+        <EditText
+            android:id="@+id/expense2Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="2400"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense2Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense1Value"/>
+
+        <EditText
+            android:id="@+id/expense3Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="මාසික දුරකතන බිල්"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense2Name"/>
+
+        <EditText
+            android:id="@+id/expense3Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="1450"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense3Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense2Value"/>
+
+
+        <EditText
+            android:id="@+id/expense4Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="වතුර බිල්"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense3Name"/>
+
+        <EditText
+            android:id="@+id/expense4Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="250"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense4Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense3Value"/>
+
+
+        <EditText
+            android:id="@+id/expense5Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="වාහනයට හෝ ගමන් වියදම්"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense4Name"/>
+
+        <EditText
+            android:id="@+id/expense5Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="6400"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense5Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense4Value"/>
+
+
+        <EditText
+            android:id="@+id/expense6Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="දෛනික පරිහරණය සදහා"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense5Name"/>
+
+        <EditText
+            android:id="@+id/expense6Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:text="8600"
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense6Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense5Value"/>
+
+
+        <EditText
+            android:id="@+id/expense7Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense6Name"/>
+
+        <EditText
+            android:id="@+id/expense7Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense7Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense6Value"/>
+
+
+        <EditText
+            android:id="@+id/expense8Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense7Name"/>
+
+
+        <EditText
+            android:id="@+id/expense8Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense8Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense7Value"/>
+
+
+        <EditText
+            android:id="@+id/expense9Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense8Name"/>
+
+        <EditText
+            android:id="@+id/expense9Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense9Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense8Value"/>
+
+
+        <EditText
+            android:id="@+id/expense10Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense9Name"/>
+
+        <EditText
+            android:id="@+id/expense10Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense10Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense9Value"/>
+
+        <EditText
+            android:id="@+id/expense11Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense10Name"/>
+
+        <EditText
+            android:id="@+id/expense11Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense11Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense10Value"/>
+
+
+        <EditText
+            android:id="@+id/expense12Name"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:hint="වියදම් මාර්ග ඇතුලත් කරන්න"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_for_edittext_names"
+            app:layout_constraintRight_toLeftOf="@id/guidelineAtNameTextFieldsEnd"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintTop_toBottomOf="@id/expense11Name"/>
+
+        <EditText
+            android:id="@+id/expense12Value"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:textAlignment="textStart"
+            android:hint="මුදල (රු) "
+            android:textColor="@color/black"
+            android:background="@drawable/border_for_edittext_values"
+            app:layout_constraintLeft_toRightOf="@id/expense12Name"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintTop_toBottomOf="@id/expense11Value"/>
+
+        <Button
+            android:id="@+id/processButton"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:text="සකසන්න\n(Save Data &amp; Process Results)"
+            app:layout_constraintWidth_percent="0.6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expense12Name"/>
+
+
+        <TextView
+            android:id="@+id/showProcessedResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="--------------"
+            android:textColor="@color/design_default_color_secondary"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="19sp"
+            android:autoSizeStepGranularity="2sp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            app:layout_constraintTop_toBottomOf="@+id/processButton"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"
+            app:layout_constraintRight_toLeftOf="@id/eNbMonitorGuidelineVerticalRight"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"/>
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/showProcessedResults"
+            app:layout_constraintLeft_toRightOf="@id/eNbMonitorGuidelineVerticalLeft"/>
+-->
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/eNbMonitorGuidelineHorizontalBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/eNbMonitorGuidelineVerticalLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/eNbMonitorGuidelineVerticalRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineAtNameTextFieldsStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineAtNameTextFieldsEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+
+
+        <!-- help window -->
+        <Button
+            android:id="@+id/helpButtonInEnB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:text="උපදෙස්?"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="4sp"
+            android:autoSizeStepGranularity="2sp"
+            android:lines="1"
+            android:padding="6dp"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@id/eNbMonitorTitle"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+            app:layout_constraintBottom_toTopOf="@id/addWaysOfIncomeTitle"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/helpWindowInEnB"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.50"
+            android:background="@drawable/black_bg_and_purple_border"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔵ඔබගේ මාසික ආදායම් හා වියදම් මාර්ග වල නම් හා මුදල කැමතිලෙස ඇතුලත් කර Process button එක click කරන්න\n🔵ඔබ ඇතුලත් කරන දත්ත save වන නිසා නැවත නැවත පැමිණ එම දත්ත වෙනස් කල හැක\n🔵ඔබගේ වියදම් මාර්ග අඩුකරගෙන ආදායම් මාර්ග වැඩි කරගැනීමට උත්සහ කරන්න"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintStart_toStartOf="@id/helpWindowInEnB"
+                app:layout_constraintTop_toTopOf="@id/helpWindowInEnB"/>
+
+            <Button
+                android:id="@+id/closeHelpWindowButtonInEnB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintWidth_percent="0.60"
+                android:text="Close"
+                app:layout_constraintStart_toStartOf="@id/helpWindowInEnB"
+                app:layout_constraintEnd_toEndOf="@id/helpWindowInEnB"
+                app:layout_constraintBottom_toBottomOf="@id/helpWindowInEnB"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

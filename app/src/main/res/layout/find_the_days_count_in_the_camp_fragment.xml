@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/findTheDaysCountInTheCampFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".findTheDaysCountInTheCamp.findTheDaysCountInTheCampFragment">
+
+
+    <ImageView
+        android:id="@+id/imageOnTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/calender_dates_count"
+        app:layout_constraintBottom_toTopOf="@id/daysCountFindGuidelineBottomOfImage"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/daysCountFindGuidelineTopOfImage" />
+
+    <TextView
+        android:id="@+id/textLastReportedDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:lines="1"
+        android:text="1️⃣ නිවාඩු ගොස් පැමිණි දිනය තෝරන්න(reportedDate):   🔽"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@id/reportedDateSelect"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/daysCountFindGuidelineBottomOfImage"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/reportedDateSelect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableLeft="@drawable/date_calender"
+        android:text="Select >"
+        app:layout_constraintBottom_toTopOf="@id/daysCountFindGuidelineBottomOfReportedDateSelectButton"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/textLastReportedDate" />
+
+    <TextView
+        android:id="@+id/showSelectedReportedDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="15sp"
+        app:layout_constraintWidth_percent="0.45"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="____"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:padding="10sp"
+        app:layout_constraintBottom_toTopOf="@id/daysCountFindGuidelineBottomOfReportedDateSelectButton"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineCenter"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/textLastReportedDate"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textTravellingDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:lines="1"
+        android:text="2️⃣ නිවාඩු යන දිනය තෝරන්න(travellingDate):                  🔽"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@id/travellingDateSelect"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/daysCountFindGuidelineBottomOfReportedDateSelectButton"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/travellingDateSelect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableLeft="@drawable/date_calender"
+        android:text="Select >"
+        app:layout_constraintBottom_toTopOf="@id/daysCountFindGuidelineBottomOfTravellingDateSelectButton"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/textTravellingDate" />
+
+    <TextView
+        android:id="@+id/showSelectedTravellingDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="15sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="____"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:padding="10sp"
+        app:layout_constraintBottom_toTopOf="@id/daysCountFindGuidelineBottomOfTravellingDateSelectButton"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineCenter"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/textTravellingDate"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textResults"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:lines="1"
+        android:gravity="bottom"
+        android:text="➡️Results:                                                                                    🔽"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/daysCountFindGuidelineBottomOfTravellingDateSelectButton"
+        app:layout_constraintBottom_toTopOf="@id/daysCountFindGuidelineTopOfResultsText"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/showsTheDaysCountInTheCamp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="____"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        app:layout_constraintWidth_percent="0.67"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@id/textResults"
+        android:background="@drawable/border"
+        android:padding="10sp"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/show30thDayAndRemainingDaysCountToLeaveTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintHeight_percent="0.05"
+        android:text=""
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        app:layout_constraintTop_toBottomOf="@id/showsTheDaysCountInTheCamp"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/show30thDayAndRemainingDaysCountToLeave"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.1"
+        android:text=""
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeMinTextSize="5sp"
+        android:autoSizeStepGranularity="2sp"
+        android:background="@drawable/border"
+        android:padding="10sp"
+        app:layout_constraintTop_toBottomOf="@id/show30thDayAndRemainingDaysCountToLeaveTitle"
+        app:layout_constraintLeft_toRightOf="@id/daysCountFindGuidelineLeft"
+        app:layout_constraintRight_toLeftOf="@id/daysCountFindGuidelineRight"
+        tools:ignore="RtlCompat" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineTopOfImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineBottomOfImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineBottomOfReportedDateSelectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineBottomOfTravellingDateSelectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/daysCountFindGuidelineTopOfResultsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
