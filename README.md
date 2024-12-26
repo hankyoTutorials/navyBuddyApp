@@ -1,6 +1,6 @@
 # Navyබඩී App <img src="https://user-images.githubusercontent.com/33552426/132079084-17fb09f4-fd62-4f88-a72b-7f204cb9ac7b.gif" alt="flag" width="50"/><img src="https://user-images.githubusercontent.com/33552426/132079084-17fb09f4-fd62-4f88-a72b-7f204cb9ac7b.gif" alt="flag" width="70"/><img src="https://user-images.githubusercontent.com/33552426/132079084-17fb09f4-fd62-4f88-a72b-7f204cb9ac7b.gif" alt="flag" width="50"/>
 
-<img src="./images/NavyBuddy-app-screenshot.png" alt="NavyBuddy-app-screenshot" width="50%" height="50%"/>
+<img src="./images/NavyBuddy-app-screenshot.png" alt="NavyBuddy-app-screenshot" width="50%"/>
 
 
 මෙම Android App එක ශ්‍රී ලංකා නාවික හමුදාවේ සේවය කරන ඔබ වෙනුවෙන් නිර්මාණය කර ඇති අතර, මෙම app එක මගින් <br/>
