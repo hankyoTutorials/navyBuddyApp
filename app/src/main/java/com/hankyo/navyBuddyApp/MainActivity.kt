@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     val response: String = response.trim().replace("\n+".toRegex(),"\n") //prevent getting a blank line
                     System.out.println("noticesFromInternet: " + response)
                     val textNoticesSection: TextView = findViewById(R.id.textNoticesSection)
-                    textNoticesSection.setText(response)
+                    textNoticesSection.setText(response +"\n\n")
                 }
 
                 override fun onError(error: ANError) {
