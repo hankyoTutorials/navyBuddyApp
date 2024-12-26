@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //receive noticesSection data from internet
-        val url: String = "https://raw.githubusercontent.com/hankyoTutorials/navyBuddyApp/refs/heads/main/textNoticeInApp"
+        val url: String = "https://raw.githubusercontent.com/hankyoTutorials/navyBuddyApp/refs/heads/master/textNoticeInApp"
         val noticesFromInternet: String;
         AndroidNetworking.initialize(this.applicationContext) //initialize for networking
         AndroidNetworking.get(url)
