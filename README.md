@@ -11,19 +11,14 @@
 + Sealink View මගින් ඔබට sealink ගිණුමක් නැත්නම් පහසුවෙන් සාදාගත හැකි අතර sealink ගිණුමක් තිබේනම් sealink වෙත නිතර නිතර පහසුවෙන් යාමට හැක.
 + ඔබගේ මානසික සුවයට ඔබට කලහැකි ක්‍රියාකාරකම් සමූහයක්ද මෙහි අඩංගුය.
 
- 
-![NavyBuddy-app-screenshot](./images/NavyBuddy-app-screenshot.png)
- 
-### භාවිත කලහැකි Linux මෙහෙයුම් පද්ධති:
 
-+ Ubuntu,linux mint,fedora වැනි සෑම linux මෙහෙයුම් පද්ධතියකම මෙම මෘදුකාංගය භාවිත කල හැක.
+<img src="./images/NavyBuddy-app-screenshot.png" alt="NavyBuddy-app-screenshot" width="50%" height="50%"/>
  
-# භාවිතය
 
-## Install කරන ආකාරය:
+## NavyBuddy App එක ඔබගේ Android දුරකතනයට Install කරන ආකාරය:
 
 1. පලමුව මෙම link එක මගින් මෙම මෘදුකාංගය download කරගන්න: <br />
-[sinhala-font-changer.zip](https://github.com/hankyoTutorials/linux-system-sinhala-font-changer/releases/download/v2.0/sinhala-font-changer.zip)
+[NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/V1.0-Beta/NavyBuddy.apk)
 
 1. ඉන්පසු එම zip එක extract කරගන්න: 
 
