@@ -16,7 +16,7 @@
 ## NavyBuddy App එක ඔබගේ Android දුරකතනයට Install කරන ආකාරය:
 
 1. පලමුව මෙම link එක මගින් මෙම මෘදුකාංගය download කරගන්න: <br />
-[NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/V1.0-Beta/NavyBuddy.apk)
+1.0V - [NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/V1.0-Beta/NavyBuddy.apk)
 
 1. ඉන්පසු එම zip එක extract කරගන්න: 
 
