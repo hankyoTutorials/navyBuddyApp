@@ -41,8 +41,12 @@
    <img src="./images/step6-do-you-want-to-install-this-application-popup.png" alt="step6-do-you-want-to-install-this-application-popup" width=250px height=150px/><br/>
    <img src="./images/step7-app-is-installed.png" alt="step7-app-is-installed.png" width=250px height=150px/>
 
+## NavyBuddy app එක Update කිරීම:
+
+ * navyබඩී app එකෙහි අලුත් version එකක් පැමිණි පසු ඉහත ඇති Install කරන පියවරයන් පිලිවෙලට සිදුකිරීමෙන් navyBuddy app එක Update කරගත හැක.
 
 ## Privacy Policy:
+
    Navyබඩී app එක භාවිතය සදහා ඔබගේ දුරකතනයේ Strorage,Camera,Location වැනි Permission කිසිවක් අවශ්‍ය නොවන අතර,<br/>
    මෙම app එකෙන් ඔබට ශ්‍රී ලංකා නාවික හමුදාව මගින් සපයා ඇති පොදු අන්තර්ජාල සේවා සපයන web අඩවි කිහිපයකට පිවිසිය හැකි අතර
    එම web අඩවි වලට පිවිසීමට ඔබ විසින් සපයන UserName හා Password තාවකාලිකව ඔබගේ දුරකතනයේ WebView Cache මත සුරක්ෂිතව Encript වේ.<br/>
@@ -50,6 +54,7 @@
 
 
 ## License
+
    NavyBuddy app එක Open source license එකක් වන "GNU General Public License" යටතේ license කරඇති අතර ඔබට මෙම app එක නොමිලේ Install කර භාවිත කල හැක.<br/>
    
    + <a href="https://github.com/hankyoTutorials/navyBuddyApp/blob/master/LICENSE.md">NavyBuddy App License</a><br/>
@@ -58,6 +63,7 @@
 
 
 ## ස්තූතිය පුදකිරීම:
+
    Navyබඩී app එක නිර්මාණය කිරීම වෙනුවෙන් පලමුවෙන්ම මාගේ අම්මා,තාත්තා හා අයියාට බෙහෙවින්ම ස්තූතියි!.<br/>
    මෙම app එක නිර්මාණය කිරීම සදහා සහයෝගය ලබාදුන් ශ්‍රී ලංකා නාවික හමුදාවේ සේවය කරන සියලු දෙනාටද,
    අන්තර්ජාලයෙන් සහයෝගය ලබාගත් සියලුම web අඩවි හා youtube නාලිකා වලටද,
