@@ -40,7 +40,7 @@ public class sealinkLoginOrRegisterActivity extends AppCompatActivity {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         if(Objects.equals(userRequestedActivityType, "login")){
-            webView.loadUrl("https://sealink.navy.lk/profile.php");
+            webView.loadUrl("https://sealink.navy.lk/profile_hris.php#");
         }
         else if(Objects.equals(userRequestedActivityType,"register")){
             webView.loadUrl("https://sealink.navy.lk/signup.php");

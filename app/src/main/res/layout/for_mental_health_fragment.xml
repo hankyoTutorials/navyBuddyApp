@@ -1,29 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forMentalHealth"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="?android:attr/colorBackground"
+    android:background="@drawable/dark_brown_bg_and_light_brown_border"
     android:clickable="true"
     android:focusable="true"
+    android:fillViewport="true"
     tools:context=".forMentalHealth.forMentalHealthFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <!--
-    <TextView
-        android:id="@+id/provenListForMentalHealth"
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:background="@drawable/black_bg_and_green_border"
-        android:padding="10dp"
-        android:text="@string/provenListForMentalHealth" />
-        -->
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp">
 
+
+        <RelativeLayout
+            android:id="@+id/whenYourMoodIsUpsetSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_with_title_white_background"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/whenYourMoodIsUpsetText"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:text="  ඔයාගෙ mood එක අවුල්නම්  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/whenYouSleepySection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whenYourMoodIsUpsetSection"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_with_title_white_background"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/whenYouSleepyText"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:text="  ඔයාට නිදිමතනම්  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:autoLink="email"
+            android:text="@string/sendUsYourStressReleasingMeditationsText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whenYouSleepySection"/>
+<!--
         <Button
             android:id="@+id/editYourMentalHealthListButton"
             android:layout_width="0dp"
@@ -34,11 +120,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
-<!--
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            c
 -->
 
     </androidx.constraintlayout.widget.ConstraintLayout>

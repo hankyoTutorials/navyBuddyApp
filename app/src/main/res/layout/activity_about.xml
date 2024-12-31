@@ -1,22 +1,264 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?android:attr/colorBackground"
+    android:background="@drawable/dark_brown_bg_and_light_brown_border"
+    android:clickable="true"
+    android:focusable="true"
+    android:fillViewport="true"
     tools:context=".about.aboutActivity">
 
-    <!-- help window -->
-    <Button
-        android:id="@+id/helpButtonInEpay"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/specialThanksSection"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="උපදෙස්?"
-        android:layout_margin="15dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_with_title_white_background"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/specialThanksText"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:text="  ස්තූතිය පුදකිරීම  "
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/dark_brown_bg_and_light_brown_border"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/installNupdateTheAppSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/specialThanksSection"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_with_title_white_background"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="web"
+                    android:textStyle="bold"
+                    android:text="@string/installNupdateTheAppText"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:text="  Install &amp; Update the App  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/privacyPolicySection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/installNupdateTheAppSection"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_with_title_white_background"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="@string/privacyPolicyText"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:text="  Privacy Policy  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/licenseSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/privacyPolicySection"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_with_title_white_background"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="web"
+                    android:textStyle="bold"
+                    android:text="@string/licenseText"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:text="  License  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/contactUsSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/licenseSection"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_with_title_white_background"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:autoLink="email"
+                    android:textStyle="bold"
+                    android:text="@string/contactUsText"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:text="  Contact Us  "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dark_brown_bg_and_light_brown_border"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/hankyoImageOnAboutSection"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/hankyo_profile_with_no_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contactUsSection"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginBottom="25dp"
+            android:text="...HANKYO PRESENTS..."
+            android:textSize="20sp"
+            android:textColor="#00F318"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contactUsSection"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -60,6 +60,7 @@ public class findTheDaysCountInTheCampFragment extends Fragment {
         int currentYear = calendar.get(Calendar. YEAR);
         int currentMonth = calendar.get(Calendar. MONTH);
         int currentDay = calendar.get(Calendar. DAY_OF_MONTH);
+        String todayDate = currentYear +"-"+ (currentMonth+1) +"-"+ currentDay;
         DatePickerDialog calenderDialog = new DatePickerDialog(requireContext(), new DatePickerDialog.OnDateSetListener() {
 
             @SuppressLint("SetTextI18n")
@@ -122,13 +123,13 @@ public class findTheDaysCountInTheCampFragment extends Fragment {
                     @SuppressLint("SimpleDateFormat") SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                     try {
                         Date oldDate = dateFormat.parse(lastReportedDate);
-                        Date todayDate = new Date();
+                        Date todayDateAndTime = new Date();
                         Date newDate = dateFormat.parse(selectedDate);
                         //Toast.makeText(requireContext(),String.valueOf(oldDate +"\n"+ todayDate +"\n"+ newDate),Toast.LENGTH_SHORT).show();
                         assert newDate != null;
                         assert oldDate != null;
                         long daysCountInCampInMilliseconds = newDate.getTime() - oldDate.getTime();
-                        long remainingDaysCountToLeaveInMilliseconds = newDate.getTime() - todayDate.getTime();
+                        long remainingDaysCountToLeaveInMilliseconds = newDate.getTime() - todayDateAndTime.getTime();
 //                    long seconds = TimeUnit.MILLISECONDS.toSeconds(difference);
 //                    long minutes = TimeUnit.MILLISECONDS.toMinutes(difference);
 //                    long hours = TimeUnit.MILLISECONDS.toHours(difference);
@@ -136,14 +137,26 @@ public class findTheDaysCountInTheCampFragment extends Fragment {
                         long daysCountInTheCamp = TimeUnit.MILLISECONDS.toDays(daysCountInCampInMilliseconds);
                         long remainingDaysCountToLeave = TimeUnit.MILLISECONDS.toDays(remainingDaysCountToLeaveInMilliseconds); //this counts the reportedDate and not count the travelling date
 
-                        if (oldDate.before(newDate) && 0 < remainingDaysCountToLeave) {
+                        //if (oldDate.before(newDate) && 0 < remainingDaysCountToLeave) {
+                        if (oldDate.before(newDate)) {
                             //show days count in the camp:
                             binding.showsTheDaysCountInTheCamp.setText("නිවාඩු යාමට රැදීසිටි දින ගණන දින "+ daysCountInTheCamp +"කි");
                             //show remaining days count:
+                            String remainingDaysCountToLeaveMsg = "";
+                            //System.out.println(" remainingDaysCountToLeave:"+ remainingDaysCountToLeave +" todayDate:"+ todayDate +" TravellingDate:"+ selectedDate);
+                            if(0 < remainingDaysCountToLeave){
+                                remainingDaysCountToLeaveMsg = remainingDaysCountToLeave +"කි";
+                            } else if(todayDate.equals(selectedDate)){
+                                remainingDaysCountToLeaveMsg = "අද දිනයේ ඔබ නිවාඩු යාමට නියමිතයි";
+                            } else if(remainingDaysCountToLeave == 0){
+                                remainingDaysCountToLeaveMsg = "හෙට දිනයේ ඔබ නිවාඩු යාමට නියමිතයි";
+                            } else{
+                                remainingDaysCountToLeaveMsg = "ඔබ පැරණි දිනයක් තෝරාගෙන ඇත";
+                            }
                             binding.show30thDayAndRemainingDaysCountToLeaveTitle.setVisibility(View.VISIBLE);
                             binding.show30thDayAndRemainingDaysCountToLeave.setVisibility(View.VISIBLE);
                             binding.show30thDayAndRemainingDaysCountToLeaveTitle.setText("\uD83D\uDD35නිවාඩු යාමට ඉතිරිව ඇති දින ගණන:                             \uD83D\uDD3D");
-                            binding.show30thDayAndRemainingDaysCountToLeave.setText(remainingDaysCountToLeave +"කි");
+                            binding.show30thDayAndRemainingDaysCountToLeave.setText(remainingDaysCountToLeaveMsg);
 
                         }
                         else {

@@ -63,7 +63,7 @@
                 android:id="@+id/appTitleAndVersionNo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Navy බඩී App\nVersion 1.0"
+                android:text="@string/appNameAndVersionNoAtMenu"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
