@@ -18,7 +18,7 @@
 
 1. පලමුව මෙම link එක මගින් මෙම මෘදුකාංගය download කරගන්න: <br />
 
-      1.0V - [NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/NavyBuddy-1.0V/NavyBuddy-1.0V.apk)<br/>
+   * 1.0V(Latest Version) - [NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/NavyBuddy-1.0V/NavyBuddy-1.0V.apk)<br/>
   
    <img src="./images/step1-file-might-be-harmfull-message.png" alt="step1-file-might-be-harmfull-message" width=250px height=150px/><br/>
    මේම එකක් ආවොත් "Download Anyway" දෙන්න:<br/>
