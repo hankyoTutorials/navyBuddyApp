@@ -41,49 +41,31 @@
    <img src="./images/step6-do-you-want-to-install-this-application-popup.png" alt="step6-do-you-want-to-install-this-application-popup" width=250px height=150px/><br/>
    <img src="./images/step7-app-is-installed.png" alt="step7-app-is-installed.png" width=250px height=150px/>
 
-## භාවිත කරන ආකාරය:
 
-1. linux terminal එකෙහි මෙම command 2ක type කිරීමෙන් මෙම මෘදුකාංගය open කරගතහැකිය:
-    
-    ```
-    cd ~/sinhala-font-changer
-    bash font-changer.sh
-    ```
+## Privacy Policy:
+   Navyබඩී app එක භාවිතය සදහා ඔබගේ දුරකතනයේ Strorage,Camera,Location වැනි Permission කිසිවක් අවශ්‍ය නොවන අතර,<br/>
+   මෙම app එකෙන් ඔබට ශ්‍රී ලංකා නාවික හමුදාව මගින් සපයා ඇති පොදු අන්තර්ජාල සේවා සපයන web අඩවි කිහිපයකට පිවිසිය හැකි අතර
+   එම web අඩවි වලට පිවිසීමට ඔබ විසින් සපයන UserName හා Password තාවකාලිකව ඔබගේ දුරකතනයේ WebView Cache මත සුරක්ෂිතව Encript වේ.<br/>
+   මෙම app එක වෙත ඇතුලත් කරන දත්ත කිසිවක් ලබාගැනීම හෝ බෙදාහැරීම අප විසින් සිදු නොකරයි.
 
-    ![run-commands-to-open-font-changer](./res/usage-instruction-1.jpg)
 
-1. මෙහිදී "Enter" key එක press කරන්න:
-    ![press-enter-to-continue](./res/usage-instruction-2.jpg)
+## License
+   NavyBuddy app එක Open source license එකක් වන "GNU General Public License" යටතේ license කරඇති අතර ඔබට මෙම app එක නොමිලේ Install කර භාවිත කල හැක.<br/>
+   
+   + <a href="https://github.com/hankyoTutorials/navyBuddyApp/blob/master/LICENSE.md">NavyBuddy App License</a><br/>
+   
+   තවද මෙම app එක සාදා ඇති කේතයන් ඔබට නැරඹිය හැකි අතර මෙම android app එක වෙනස් කිරීමට හා ප්‍රතිනිර්මාණය කිරීමට ඔබට අවසර තිබේ.
 
-1. මෙහි ඇති සිංහල font අතරින් ඔබට කැමති සිංහල font එකට අදාල අකුර type කර enter කරන්න:
-    ![choose-a-font-to-install](./res/usage-instruction-3.jpg)
 
-1. Complete!, ඉන්පසු සිංහල font එක වෙනස් වී ඇත්දැයි පරික්ෂා කර බලන්න
-    ![installation-is-now-complete](./res/usage-instruction-4.jpg)
+## ස්තූතිය පුදකිරීම:
+   Navyබඩී app එක නිර්මාණය කිරීම වෙනුවෙන් පලමුවෙන්ම මාගේ අම්මා,තාත්තා හා අයියාට බෙහෙවින්ම ස්තූතියි!.<br/>
+   මෙම app එක නිර්මාණය කිරීම සදහා සහයෝගය ලබාදුන් ශ්‍රී ලංකා නාවික හමුදාවේ සේවය කරන සියලු දෙනාටද,
+   අන්තර්ජාලයෙන් සහයෝගය ලබාගත් සියලුම web අඩවි හා youtube නාලිකා වලටද,
+   වචනෙකින් හෝ සහයෝගය ලබාදුන් ඔබ සියලු දෙනාටද ස්තූතිය පුදකර සිටිනවා!..
 
-1. නැවතත් වෙනත් සිංහල font එකකට මාරුවීමට කැමතිනම් මෙම command 2ක type කර යලි මෙම මෘදුකාංගය 
-open කරගතහැකිය:
-
-    ```
-    cd ~/sinhala-font-changer
-    bash font-changer.sh
-    ```
-
-    ![change-to-another-font](./res/usage-instruction-5.jpg)
-
-### මෙම මෘදුකාංගය නිර්මාණය කරඇති ආකාරය:
-
-මෙහිදී `fontconfig` library එක හරහා සිංහල Unicode අකුරු සඳහා සිංහල font එකක් ආදේශනය කළ යුතු බව 
-විශේෂයෙන් මෙහෙයුම් පද්ධතියට අවධාරණය කරයි, මේ සඳහා සැකසිය යුතු `fontconfig` configuration file 
-සම්බන්ධයෙන් Arch Wiki හි පහත ලිපි වල විස්තරාත්මකව තතු ඉදිරිපත් කර ඇත.
-
-+ [Font_configuration](https://wiki.archlinux.org/title/Font_configuration)
-+ [Font_configuration/Examples](https://wiki.archlinux.org/title/Font_configuration/Examples)
-
+   
 ## උපකාර
 
 * [Github Issue](https://github.com/hankyoTutorials/linux-system-sinhala-font-changer/issues) එකක් 
 open කිරීමෙන් උපකාර ලබා ගත හැකිය. 
-
-Contact Adeepa: slrootkit@gmail.com (https://slrootkit.blogspot.com)<br/>
-Contact Hankyo: hankyomail@gmail.com
+* ඔබගේ යෝජනා,චෝදනා හා අදහස් අපට Email කරන්න: hankyomail@gmail.com
