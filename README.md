@@ -1,9 +1,10 @@
 # Navyබඩී App <img src="https://user-images.githubusercontent.com/33552426/132079084-17fb09f4-fd62-4f88-a72b-7f204cb9ac7b.gif" alt="flag" width="50"/><img src="https://user-images.githubusercontent.com/33552426/132079084-17fb09f4-fd62-4f88-a72b-7f204cb9ac7b.gif" alt="flag" width="70"/><img src="https://user-images.githubusercontent.com/33552426/132079084-17fb09f4-fd62-4f88-a72b-7f204cb9ac7b.gif" alt="flag" width="50"/>
+<p align="center" color="#4BA7F8">... A ANDROID APP FOR SRI LANKAN NAVY SOLDIERS ...</p> 
 
-<img src="./images/NavyBuddy-app-screenshot.png" alt="NavyBuddy-app-screenshot" width="50%"/>
+<p align="center"><img src="./images/NavyBuddy-app-screenshot.png" alt="NavyBuddy-app-screenshot" width="50%"/></p>
 
 
-මෙම Android App එක ශ්‍රී ලංකා නාවික හමුදාවේ සේවය කරන ඔබ වෙනුවෙන් නිර්මාණය කර ඇති අතර, මෙම app එක මගින් <br/>
+### ⚓️⚓️ මෙම Android App එක ශ්‍රී ලංකා නාවික හමුදාවේ සේවය කරන ඔබ වෙනුවෙන් නිර්මාණය කර ඇති අතර, මෙම app එක මගින්
 + Short notes සටහන් කල හැකි අතර ඔබට අමතක වෙන, වැදගත් දේ එහි ඉක්මනින් සටහන් කරගත හැක.
 + Monthly Budget Calculator එක මගින් ඔබගේ මාසික ආදායම් හා වියදම් වල වෙනස ගණනය කල හැක.
 + Check Lists Manager එක මගින් ඔබ එදිනෙදා කරන දේවල් වල පියවරයන් වෙන් වෙන්ව List වල Save කර ඒම පියවර එකින් එක අවසන් කරගත හැක.
