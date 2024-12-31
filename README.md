@@ -16,15 +16,30 @@
 ## NavyBuddy App එක ඔබගේ Android දුරකතනයට Install කරන ආකාරය:
 
 1. පලමුව මෙම link එක මගින් මෙම මෘදුකාංගය download කරගන්න: <br />
-1.0V - [NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/V1.0-Beta/NavyBuddy.apk)
 
-1. ඉන්පසු එම zip එක extract කරගන්න: 
+      1.0V - [NavyBuddy.apk](https://github.com/hankyoTutorials/navyBuddyApp/releases/download/V1.0-Beta/NavyBuddy.apk)<br/>
+  
+   <img src="./images/step1-file-might-be-harmfull-message.png" alt="step1-file-might-be-harmfull-message" width=250px height=150px/><br/>
+   මේම එකක් ආවොත් "Download Anyway" දෙන්න:<br/>
+   (මේ app එක open source හා කිසිම permission එකක් අවශ්‍ය නැති නිසා බයවෙන්න දෙයක් නෑ)<br/>
 
-    ![Extract-linux-sinhala-font-changer-zip](./res/instruction-1.jpg)
+   <img src="./images/step2-click-the-download-button.png" alt="step2-click-the-download-button" width=250px height=150px/><br/>
+   (Download වෙන ගමන්)<br/>
+   
+2. ඉන්පසු download කරපු navyBuddy.apk file එක open කරගන්න:
 
-1. මීලගට එම "sinhala-font-changer" folder එක cut කර ඔබගේ home folder එකට paste කරන්න: 
-    ![move-extracted-folder-to-home](./res/instruction-2.jpg) 
-    ![move-extracted-folder-to-home-2](./res/instruction-3.jpg)
+   <img src="./images/step3-open-the-downloaded-navyBuddy-apk-file.png" alt="step3-open-the-downloaded-navyBuddy-apk-file" width=250px height=150px/>
+    
+
+3. මේ app එක playstore එකේ නැති නිසා internet එකෙන් download කරල install කරගන්න වෙන්නෙ.<br/>ඒනිසා මේකෙ "Settings" ගිහින් "Allow from this source" එක Enable කරන්න:
+
+   <img src="./images/step4-allow-install-apps-from-unknown-sources-popup.png" alt="step4-allow-install-apps-from-unknown-sources-popup" width=250px height=150px/><br/>
+   <img src="./images/step5-enable-the-install-apps-from-this-unknown-source.png" alt="step5-enable-the-install-apps-from-this-unknown-source" width=250px height=150px/>
+   
+4. ඊටපස්සෙ Install කරල App එක Open කරගන්නයි තියෙන්නෙ:
+
+   <img src="./images/step6-do-you-want-to-install-this-application-popup.png" alt="step6-do-you-want-to-install-this-application-popup" width=250px height=150px/><br/>
+   <img src="./images/step7-app-is-installed.png" alt="step7-app-is-installed.png" width=250px height=150px/>
 
 ## භාවිත කරන ආකාරය:
 
