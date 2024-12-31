@@ -70,8 +70,11 @@
    වචනෙකින් හෝ සහයෝගය ලබාදුන් ඔබ සියලු දෙනාටද ස්තූතිය පුදකර සිටිනවා!..
 
    
-## උපකාර
+## උපකාර:
 
-* [Github Issue](https://github.com/hankyoTutorials/linux-system-sinhala-font-changer/issues) එකක් 
+<img src="./app/src/main/res/drawable/hankyo_profile_with_no_background.png" alt="hankyo-image" width=200px height=200px/>
+
+* [Github Issue](https://github.com/hankyoTutorials/navyBuddyApp/issues/new) එකක් 
 open කිරීමෙන් උපකාර ලබා ගත හැකිය. 
 * ඔබගේ යෝජනා,චෝදනා හා අදහස් අපට Email කරන්න: hankyomail@gmail.com
+
